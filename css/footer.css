@@ -1,24 +1,78 @@
-
-
-
-@media screen and (max-width:480px){
-    .footer{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer__contact{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: red;
-    }
-    
+/* Code CSS pour l'entête */
+.footer {
+    width: 96%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
-@media screen and (max-width:768px){
+.footer__phone, 
+.footer__email, 
+.footer__social,
+.footer__copyright {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
 
+.footer__phone__title,
+.footer__email__title,
+.footer__social__title {
+    margin-bottom: 4px;
+}
+
+.footer__phone__link,
+.footer__email__link {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer__social__item {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    gap: 0.9rem; 
+}
+
+.footer__social__item__link {
+    margin-bottom: 5px;
+}
+
+/* Styles pour les smartphones */
+@media screen and (max-width: 480px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__social,
+    .footer__phone,
+    .footer__email {
+        align-items: center;
+    }
+
+    .footer__social__item {
+        align-items: center;
+    }
+}
+
+/* styles pour les tablettes */
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__phone,
+    .footer__email,
+    .footer__social {
+        text-align: center;
+    }
+
+    .footer__social__item {
+        gap: 0.5rem;
+    }
 }

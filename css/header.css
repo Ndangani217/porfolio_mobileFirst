@@ -16,11 +16,11 @@ ul{
 
 /*le code css de l'entete*/
 .header{
-    padding: 20px;
+    width: 96%;
+    margin: auto;
 } 
 
 .header__nav{
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
