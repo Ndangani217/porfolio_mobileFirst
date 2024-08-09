@@ -1,0 +1,18 @@
+.main{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:480px){
+    .main__expercience{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__expercience__container__content__text, .main__expercience__container__content__stain{
+        line-height: 1.6;
+    }
+}
