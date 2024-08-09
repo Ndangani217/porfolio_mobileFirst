@@ -1,0 +1,56 @@
+/* Styles généraux */
+.main {
+    width: 96%;
+    margin: auto;
+}
+
+.main__project__title{
+    color: #000;
+}
+
+.main__project{
+    display: flex;
+    flex-direction: row;
+}
+
+.main__project__content{
+    display: flex;
+    flex-direction: row;
+}
+
+.main__project__image{
+    margin: 0%;
+}
+
+
+/* Styles pour les petits écrans ou smartphones */
+
+@media screen and (max-width:768px) {
+    .main {
+        width: 96%;
+        margin: auto;
+    }
+
+    .main__project__title{
+        text-align: center;
+    }
+
+    .main__project{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main__project__content{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main__project__image__img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .main__project__content__text{
+        line-height: 1.6;
+    }
+}
