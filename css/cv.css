@@ -1,18 +1,97 @@
-.main{
+/* Styles de base pour les petits écrans */
+.main {
     width: 98%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
+.main__expercience,
+.main__education,
+.main__competence {
+    border-bottom: 1px solid #000;
+}
 
-@media screen and (max-width:480px){
-    .main__expercience{
-        display: flex;
-        flex-direction: column;
+.main__expercience__container,
+.main__education__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__expercience__container__speciality,
+.main__education__container__speciality {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-content: normal;
+}
+
+.main__expercience__container__speciality__domain__title,
+.main__education__container__speciality__domain__title {
+    margin: 16px 0;
+}
+
+.main__expercience__container__content,
+.main__education__container__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__expercience__container__content__text,
+.main__education__container__content__text,
+.main__competence__item__content,
+.main__language__item__content {
+    line-height: 1.5rem;
+    margin-bottom: 0;
+}
+
+.main__expercience__container__contentu__stain,
+.main__education__container__contentu__stain {
+    line-height: 1.5;
+}
+
+/* tablettes pour les écrans plus larges */
+@media screen and (min-width:479px) and (max-width:767px) {
+    .main__expercience__container,
+    .main__education__container {
+        flex-direction: column; 
     }
 
-    .main__expercience__container__content__text, .main__expercience__container__content__stain{
-        line-height: 1.6;
+    .main__expercience__container__speciality,
+    .main__education__container__speciality {
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        font-size: 20px;
+    }
+
+    .main__expercience__container,
+    .main__education__container {
+        flex-direction: column; 
+    }
+
+    .main__expercience__container__speciality,
+    .main__education__container__speciality {
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    .main__expercience__container__content__text,
+    .main__education__container__content__text,
+    .main__competence__item__content,
+    .main__language__item__content {
+        line-height: 1.8rem;
+        margin-bottom: 0;
+    }   
+
+    .main__expercience__container__contentu__stain,
+    .main__education__container__contentu__stain {
+        line-height: 1.8;
     }
 }

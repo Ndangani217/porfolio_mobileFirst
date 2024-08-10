@@ -1,0 +1,151 @@
+.main{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__expercience__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__expercience__container__speciality__domain{
+    flex-direction: row;
+}
+
+.main__expercience__container__speciality__domain__place,
+.main__expercience__container__speciality__hard{
+    margin-top: 0;
+}
+
+.main__education__container{
+    display: flex;
+    flex-direction: row;
+}
+
+.main__education__container__speciality__domain{
+    display: flex;
+    flex-direction: row;
+}
+
+.main__education__container__speciality__domain__place,
+.main__education__container__speciality__hard{
+    margin-top: 0;
+}
+
+.main__expercience{
+    border-bottom: 1px solid #000;
+}
+.main__expercience__container__content__text,
+.main__expercience__container__contentu__stain__item{
+    line-height: 1.6;
+}
+
+.main__expercience__container__content__text,
+.main__expercience__container__contentu__stain{
+    margin: 2 auto;
+}
+
+.main__education{
+    border-bottom: 1px solid #000;
+}
+.main__education__container__content__text,
+.main__education__container__contentu__stain__item{
+    line-height: 1.6;
+}
+
+.main__education__container__content__text,
+.main__education__container__contentu__stain{
+    margin: 2 auto;
+}
+
+.main__expercience__container__speciality__domain,
+.main__education__container__speciality__domain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main__competence{
+    border-bottom: 1px solid #000;
+}
+
+.main__competence__item__content{
+    line-height: 1.6;
+}
+
+
+.main__language__item__content{
+    line-height: 1.6;
+}
+
+@media screen and (max-width:480px){
+    
+    .main__expercience__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__education__container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main__education__container__speciality__domain{
+        display: flex;
+        flex-direction: column;;
+    }
+
+
+    .main__expercience__container__speciality__domain__place,
+    .main__expercience__container__speciality__hard{
+        margin-top: 0;
+    }
+
+    .main__education__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__education__container__speciality__domain{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__education__container__speciality__domain__place,
+    .main__education__container__speciality__hard{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main__expercience__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__expercience__container__speciality__domain{
+        flex-direction: row;
+    }
+
+    .main__expercience__container__speciality__domain__place,
+    .main__expercience__container__speciality__hard{
+        margin-top: 0;
+    }
+
+    .main__education__container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main__education__container__speciality__domain{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main__education__container__speciality__domain__place,
+    .main__education__container__speciality__hard{
+        margin-top: 0;
+    }
+}
