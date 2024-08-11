@@ -6,10 +6,11 @@
     <title>Contact</title>
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
      <!-- L'entête de la page -->
-    <header class="header">
+    <!-- <header class="header">
         <nav class="header__nav">
             <a class="header__nav__logo" href="index.html">HERITIER NDANGANI</a>
             <ul class="header__nav__menu">
@@ -18,9 +19,62 @@
                 <li class="header__nav__menu__item"><a class="header__nav__menu__item__link" href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+
+    <main class="main">
+        <section class="main__container">
+            <div class="main__container__contact">
+                <h2 class="main__container__title">Contact</h2>     
+                <div class="main__container__contact__phone">
+                    <h3 class="main__container__contact__phone__title">Telephone</h3>
+                    <a class="main__container__contact__phone__link" href="tel:+243818969931" target="_blank">+243 818969931</a>
+                </div>
+        
+                <div class="main__container__contact__email">
+                    <h3 class="main__container__contact__email__title">Email</h3>
+                    <a class="main__container__contact__email__link" href="mailto:heritierndangani217@gmail.com" target="_blank"> heritierndangani217@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="main__container__details">
+                <form class="main__container__details__form" action="#" method="GET">
+                    <div class="main__container__details__form__form-group">
+                        <label for="first-name">Votre nom</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+    
+                    <div class="main__container__details__form__form-group">
+                        <label for="last-name">Votre prénom</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+    
+                    <div class="main__container__details__form__form-group">
+                        <label for="email">Votre Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+    
+                    <div class="main__container__details__form__form-group">
+                        <label for="subject">L'objet de votre Message</label>
+                        <input type="text" name="subject" id="subject" required>
+                    </div>
+
+                    <div class="main__container__details__form__form-group">
+                        <label for="message">Votre message</label>
+                        <textarea name="message" id="message" rows="6"></textarea>
+                    </div>
+
+                    <div class="main__container__details__form_button">
+                        <input type="submit" value="Envoyer" id="submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
     <!-- Le pied de la page -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__phone">
             <h3 class="footer__phone__title">Téléphone</h3>
             <a class="footer__phone__link" href="tel:+243818969931">+243818969931</a>
@@ -46,7 +100,7 @@
         <div class="footer__copyright">
             <p>2024 By Heir Ndangani</p>
         </div>
-    </footer>
+    </footer> -->
     
 </body>
 </html>
