@@ -12,7 +12,7 @@ ul{
 /*le code css de l'entete*/
 .header{
     width: 100%;
-    padding: 30px;
+    padding: 20px 30px;
     box-sizing: border-box;
 } 
 
