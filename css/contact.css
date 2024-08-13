@@ -88,15 +88,25 @@
         text-align: center;
     }
 
+    .main__container__details{
+        width: 100%;    
+    }
+
     .main__container__details__form{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
         row-gap: 20px;
+        width: auto;
     }
 
     .main__container__details__form__form-group{
         display: flex;
         flex-direction: column;
+    }
+
+    .main__container__details__form_button{
+        display: flex;
+        justify-content: center;
     }
 
     .main__container__details__form__form-group input{
@@ -113,14 +123,17 @@
     }
 
     .main__container__contact{
-        display: flex;
         flex-direction: column;
+    }
+
+    .main__container__details{
+        width: 100%;    
     }
 
     .main__container__details__form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        padding: 0;
     }
     
     .main__container__details__form__form-group {
