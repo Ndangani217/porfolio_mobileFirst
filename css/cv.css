@@ -51,7 +51,7 @@
 }
 
 /* tablettes pour les écrans plus larges */
-@media screen and (min-width:479px) and (max-width:767px) {
+@media screen and (max-width:480px) {
     .main__expercience__container,
     .main__education__container {
         flex-direction: column; 
@@ -65,7 +65,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and  (min-width: 481px) and (max-width:768px) {
     body{
         font-size: 20px;
     }
