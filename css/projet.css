@@ -1,0 +1,101 @@
+/* Styles généraux */
+.main {
+    width: 96%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.main__project{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main__project__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__project__content_description{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 20%;
+}
+
+.main__project__content__description__image, .main__project__content__description__text{
+    box-sizing: border-box; 
+    flex: 1;
+}
+
+.main__project__content__description__image{
+    margin: 0%;
+}
+
+.main__project__content__description__image__img{
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+}
+
+.main__project__content__description__text{
+    line-height: 1.6;
+}
+
+/* Styles pour les petits écrans ou smartphones */
+
+@media screen and (max-width:480px) {
+   
+    body{
+        padding: 0;
+    }
+
+    .main__project__title{
+        text-align: center;
+    }
+
+    .main__project{
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+
+    .main__project__content{
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .main__project__content_description{
+        flex-direction: column;
+    }
+
+    .main__project__content__description__image__img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Styles pour les tablettes */
+@media screen and (max-width: 768px) {
+
+    body{
+        padding: 0;
+    }
+    
+    .main__project{
+        gap: 20px;
+    }
+
+    .main__project__content__title{
+        margin-bottom: 0;
+    }
+
+    .main__project__content_description{
+        gap: 30px;
+    }
+
+    .main__project__content__description__image__img{
+        width: 100%;
+        height: auto;
+    }
+} 
